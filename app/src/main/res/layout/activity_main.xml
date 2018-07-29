@@ -1,0 +1,143 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F7F7F7"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="false"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/titleTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark"
+            android:fontFamily="@font/open_sans_light"
+            android:padding="10dp"
+            android:text="Welcome back"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/dateTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark"
+            android:fontFamily="@font/open_sans_light"
+            android:padding="10dp"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TableRow
+            android:id="@+id/homeButtonRow1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/todaysMedicationButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:width="64dp"
+                android:height="128dp"
+                android:background="@color/colorPrimary"
+                android:fontFamily="@font/open_sans_semibold"
+                android:padding="10dp"
+                android:text="Your Medication"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/addAppointmentReminderButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:width="64dp"
+                android:height="128dp"
+                android:background="@color/colorPrimary"
+                android:fontFamily="@font/open_sans_semibold"
+                android:padding="10dp"
+                android:text="Add New Appointment"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/homeButtonRow2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/locationButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:width="64dp"
+                android:height="128dp"
+                android:background="@color/colorPrimary"
+                android:fontFamily="@font/open_sans_semibold"
+                android:padding="10dp"
+                android:text="FIND YOUR LOCATION"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/contactsButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:width="64dp"
+                android:height="128dp"
+                android:background="@color/colorPrimary"
+                android:fontFamily="@font/open_sans_semibold"
+                android:padding="10dp"
+                android:text="Contacts Settings"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/helpButtonRow"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/emergencyHelpButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:width="64dp"
+                android:height="128dp"
+                android:background="@color/colorAccent"
+                android:fontFamily="@font/open_sans_bold"
+                android:text="EMERGENCY HELP"
+                android:textColor="#FFFFFF"
+                android:textSize="25sp" />
+        </TableRow>
+
+    </LinearLayout>
+</RelativeLayout>
